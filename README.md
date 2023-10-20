@@ -45,6 +45,7 @@ Here's an example of a response:
 
 ```json
 {
+  "transaction_id" : 2342357,
   "recommendation": "approve"
 }
 ```
@@ -59,6 +60,7 @@ Receive a response with a recommendation of "approve" or "deny."
 To install and set up the Fraud Detection System locally:
 
 ```sh
+$ git clone git@github.com:raphaelmatteoni/myapp.git
 $ cd myapp
 $ docker-compose up --build
 $ docker-compose run web rake db:setup
