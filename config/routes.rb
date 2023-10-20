@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  post '/anti_fraud/check_transaction', to: 'anti_fraud#check_transaction'
 end
